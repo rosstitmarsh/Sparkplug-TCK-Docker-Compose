@@ -1,0 +1,13 @@
+services:
+  hivemq:
+    build:
+      target: hivemq
+    ports:
+      - "1883:1883"
+      - "8000:8000"
+
+  webconsole:
+    build:
+      target: webconsole
+    ports:
+      - "3000:3000"
